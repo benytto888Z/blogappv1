@@ -1,3 +1,7 @@
+<?php
+    require 'Database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Mon super blog</h1>
+     <div>
+        <h1>Mon blog</h1>
+        <p>En construction</p>
+
+        <?php
+            $db = new Database();
+          echo  $db->getConnection();
+        ?>
+    </div>
 </body>
 </html>
